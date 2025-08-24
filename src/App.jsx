@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import "./App.css";
+import cv_english from './assets/cv/LeonardoPiassaCV-english.pdf'
+import cv_portuguese from './assets/cv/LeonardoPiassaCV-portuguese.pdf'
 import email_icon from './assets/icons/email-icon.png';
 import github_icon from './assets/icons/github-icon.png';
 import linkedin_icon from './assets/icons/linkedin-icon.png';
@@ -22,7 +24,7 @@ export default function App() {
     window.scrollTo(0, 0);
   }, []);
 
-  useReveals();
+  useReveals([projects.length]);
   useParallax(heroRef);
 
   useEffect(() => {
@@ -61,6 +63,7 @@ export default function App() {
             <a href="#about" onClick={() => setOpen(false)}>About</a>
             <a href="#projects" onClick={() => setOpen(false)}>Projects</a>
             <a href="#contact" onClick={() => setOpen(false)}>Contact</a>
+            <a href="#cv" onClick={() => setOpen(false)}>CV</a>
           </nav>
         </header>
 
@@ -127,14 +130,14 @@ export default function App() {
           </div>
         </section>
 
-        <section id="about" className="section narrow">
+        <section id="cv" className="section narrow">
           <h2 className="reveal" style={{ marginTop: 0 }}>Download CV</h2>
           <div className="grid">
             <div className="card reveal" style={{ transitionDelay: ".05s" }}>
               <h3>
                 English (en)
               </h3>
-              <a className="btn" href="/LeonardoPiassaCV-english.pdf" download target="_blank" rel="noopener noreferrer">
+              <a className="btn" href={cv_english} download target="_blank" rel="noopener noreferrer">
               Click here to download.
               </a>
             </div>
@@ -142,7 +145,7 @@ export default function App() {
               <h3>
                 Portuguese (pt-br)
               </h3>
-              <a className="btn" href="/LeonardoPiassaCV-portuguese.pdf" download target="_blank" rel="noopener noreferrer">
+              <a className="btn" href={cv_portuguese} download target="_blank" rel="noopener noreferrer">
               Click here to download.
               </a>
             </div>

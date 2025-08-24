@@ -39,7 +39,7 @@
   clip:rect(0,0,0,0); white-space:nowrap; border:0;
 }
 
-#about, #projects, #contact { scroll-margin-top: 80px; }
+#about, #projects, #contact, #cv { scroll-margin-top: 80px; }
 
 .site { position: sticky; top: 0; }
 
