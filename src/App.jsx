@@ -24,7 +24,7 @@ export default function App() {
     window.scrollTo(0, 0);
   }, []);
 
-  useReveals([projects.length]);
+  useReveals();
   useParallax(heroRef);
 
   useEffect(() => {
@@ -98,7 +98,7 @@ export default function App() {
           {projects.length > 0 ? (
             <div className="grid">
               {projects.map((prj) => (
-                <article key={prj.id} className="card reveal" style={{ transitionDelay: ".05s" }}>
+                <article key={prj.id} className="card" style={{ transitionDelay: ".05s" }}>
                   <h3>{prj.title}</h3>
                   <p className="muted">{prj.caption}</p>
                   <a className="btn" href={prj.url} target="_blank" rel="noopener noreferrer">
