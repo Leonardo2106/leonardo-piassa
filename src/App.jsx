@@ -127,6 +127,28 @@ export default function App() {
           </div>
         </section>
 
+        <section id="about" className="section narrow">
+          <h2 className="reveal" style={{ marginTop: 0 }}>Download CV</h2>
+          <div className="grid">
+            <div className="card reveal" style={{ transitionDelay: ".05s" }}>
+              <h3>
+                English (en)
+              </h3>
+              <a className="btn" href="/LeonardoPiassaCV-english.pdf" download target="_blank" rel="noopener noreferrer">
+              Click here to download.
+              </a>
+            </div>
+            <div className="card reveal" style={{ transitionDelay: ".1s" }}>
+              <h3>
+                Portuguese (pt-br)
+              </h3>
+              <a className="btn" href="/LeonardoPiassaCV-portuguese.pdf" download target="_blank" rel="noopener noreferrer">
+              Click here to download.
+              </a>
+            </div>
+          </div>
+        </section>
+
         <section id="contact" className="section narrow">
           <h2 className="reveal" style={{ marginTop: 0 }}>Contact</h2>
           <div className="card reveal" style={{ transitionDelay: ".05s" }}>

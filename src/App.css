@@ -366,7 +366,6 @@ header.site nav a:focus-visible {
   opacity: 1;
   transform: translateY(0) scale(1);
 }
-*/
 
 .js .reveal {
   opacity: 0;
