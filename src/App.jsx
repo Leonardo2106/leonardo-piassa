@@ -46,7 +46,7 @@ export default function App() {
       <div className="content">
         <header className="site">
           <div className="logo" aria-label="Logo e nome">
-            <strong>Leonardo Piassa</strong> · Dev FullStack · AI Researcher
+            <strong>Leonardo Piassa</strong> · Computer Science student
           </div>
 
           <button
@@ -73,8 +73,7 @@ export default function App() {
               Hello, I'm <span style={{ color: "#9ec1ff" }}>Leonardo Piassa</span>.
             </h1>
             <p className="reveal" style={{ transitionDelay: ".15s" }}>
-              Developer focus in <b>Web Services</b>, <b>Python</b> and <b>ML/DL</b>. I create
-              high-performance and beautiful products, from the backend to the UI.
+              Studying Computer Science and focused on <b>Web Services</b> at the moment.
             </p>
             <div className="cta reveal" style={{ transitionDelay: ".25s" }}>
               <a className="btn primary" href="#projects">View projects</a>
@@ -84,11 +83,11 @@ export default function App() {
           <div className="reveal" style={{ transitionDelay: ".2s" }}>
             <div className="card">
               <h3>Mainly stack</h3>
-              <p className="muted">Django · React.js · PostgreSQL · Pandas/Numpy · CI/CD</p>
+              <p className="muted">Django · React.js</p>
             </div>
             <div className="card" style={{ marginTop: 12 }}>
               <h3>Available for</h3>
-              <p className="muted">Freelances, short and long-term projects, consultancy.</p>
+              <p className="muted">Internships and freelances.</p>
             </div>
           </div>
         </section>
@@ -117,14 +116,12 @@ export default function App() {
           <div className="grid">
             <div className="card reveal" style={{ transitionDelay: ".05s" }}>
               <p>
-                I'm a software engineer focused on products that lack <b>UX</b> and <b>performance</b>.
-                I love clean architecture, testing, and automation.
+                I'm a Computer Science student at <a href="https://fiap.com.br" target="_blank" rel="noopener noreferrer">FIAP</a>. I strive every day to improve my <b>knowledge</b> and improve my <b>performance</b>.
               </p>
             </div>
             <div className="card reveal" style={{ transitionDelay: ".1s" }}>
               <p>
-                I work with React/Next on the front end, Django/FastAPI on the back end, and
-                Postgres/Redis databases. I enjoy DevOps with Docker and CI/CD.
+                I'm always developing personal and college projects. And I'll post some of them here.
               </p>
             </div>
           </div>
